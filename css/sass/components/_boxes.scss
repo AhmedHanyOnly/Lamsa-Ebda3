@@ -89,6 +89,7 @@
     padding: 30px;
     border-radius: 6px;
     color: #fff;
+    z-index: 1;
     position: relative;
     overflow: hidden;
     .header {
@@ -133,6 +134,7 @@
     }
     .object{
       position: absolute;
+      z-index: -1;
       &.obj1{
         left: 0;
         bottom: 0;
