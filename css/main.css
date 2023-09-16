@@ -176,6 +176,22 @@ input[type=number] {
   line-height: normal;
 }
 
+.btn-holder {
+  margin-top: 50px;
+  padding: 15px 48px;
+  border-radius: 5px;
+  gap: 10px;
+  background-color: #EBCD1E;
+}
+.btn-holder a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
 .main-btn {
   display: flex;
   padding: 9px 24px;
@@ -351,4 +367,174 @@ input[type=number] {
   font-weight: 600;
   line-height: 33.73px;
   border-radius: 0 0 6px 6px;
+}
+
+.box-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 647px;
+  background-color: rgba(235, 205, 30, 0.9);
+  padding: 30px;
+  border-radius: 6px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.box-contact .header .title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 52px;
+}
+.box-contact .header .des {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+}
+.box-contact .info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.box-contact .info p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.box-contact .info p img {
+  margin-left: 20px;
+}
+.box-contact .social {
+  display: flex;
+  gap: 20px;
+  color: #fff;
+}
+.box-contact .social .icon-soc {
+  padding: 10px;
+  background-color: #1b1b1b;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.box-contact .social .icon-soc:hover {
+  background-color: #fff;
+  color: #EBCD1E;
+}
+.box-contact .object {
+  position: absolute;
+}
+.box-contact .object.obj1 {
+  left: 0;
+  bottom: 0;
+}
+.box-contact .object.obj2 {
+  left: 0;
+  bottom: 50px;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  color: #8d8d8d;
+}
+.form-contact .main-lab {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.form-contact .main-inp {
+  border: 0;
+  padding: 12px 0;
+  border-bottom: 2px solid #8d8d8d;
+}
+.form-contact .main-inp:focus-visible {
+  border: 0;
+  border-bottom: 2px solid #000;
+  outline: 0;
+}
+
+.check-holder h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.check-holder .form-checked .main-lab {
+  font-size: 14px;
+}
+.check-holder .form-checked .main-inp {
+  background-color: #EBCD1E;
+}
+.check-holder .form-checked .main-inpinput[type=submit] {
+  background: #0de281;
+}
+.check-holder .form-checked .main-inpinput:checked {
+  outline: 2px solid yellow;
+}
+
+/* Customize the label (the container) */
+.check-holder {
+  direction: rtl;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check-holder input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.check-holder:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-holder input:checked ~ .checkmark {
+  background-color: #EBCD1E;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.check-holder input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-holder .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }/*# sourceMappingURL=main.css.map */
