@@ -63,8 +63,14 @@ input[type=number] {
 }
 
 .box-nav {
+  padding: 10px 0;
+  background-color: rgba(68, 68, 68, 0.4117647059);
+}
+.box-nav.nav-landing {
+  padding: 0;
   z-index: 1000;
   position: absolute;
+  background-color: transparent;
   top: 35px;
   left: 0;
   width: 100%;
@@ -370,6 +376,12 @@ input[type=number] {
 }
 
 .box-contact {
+  border-radius: 10px;
+  padding: 10px;
+  background: #FFF;
+  box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
+}
+.box-contact .box-contact {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -381,52 +393,52 @@ input[type=number] {
   position: relative;
   overflow: hidden;
 }
-.box-contact .header .title {
+.box-contact .box-contact .header .title {
   font-size: 28px;
   font-weight: 600;
   line-height: 52px;
 }
-.box-contact .header .des {
+.box-contact .box-contact .header .des {
   font-size: 18px;
   font-weight: 400;
   line-height: 34px;
 }
-.box-contact .info {
+.box-contact .box-contact .info {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.box-contact .info p {
+.box-contact .box-contact .info p {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
 }
-.box-contact .info p img {
+.box-contact .box-contact .info p img {
   margin-left: 20px;
 }
-.box-contact .social {
+.box-contact .box-contact .social {
   display: flex;
   gap: 20px;
   color: #fff;
 }
-.box-contact .social .icon-soc {
+.box-contact .box-contact .social .icon-soc {
   padding: 10px;
   background-color: #1b1b1b;
   border-radius: 50%;
   transition: 0.3s;
 }
-.box-contact .social .icon-soc:hover {
+.box-contact .box-contact .social .icon-soc:hover {
   background-color: #fff;
   color: #EBCD1E;
 }
-.box-contact .object {
+.box-contact .box-contact .object {
   position: absolute;
 }
-.box-contact .object.obj1 {
+.box-contact .box-contact .object.obj1 {
   left: 0;
   bottom: 0;
 }
-.box-contact .object.obj2 {
+.box-contact .box-contact .object.obj2 {
   left: 0;
   bottom: 50px;
 }
@@ -480,7 +492,6 @@ input[type=number] {
   font-size: 14px;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -534,7 +545,5 @@ input[type=number] {
   height: 10px;
   border: solid white;
   border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }/*# sourceMappingURL=main.css.map */

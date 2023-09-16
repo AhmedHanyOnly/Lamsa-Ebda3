@@ -76,65 +76,71 @@
   }
 }
 .box-contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 647px;
-  background-color: rgba($color: #ebcd1ee8, $alpha: 0.9);
-  padding: 30px;
-  border-radius: 6px;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-  .header {
-    .title {
-      font-size: 28px;
-      font-weight: 600;
-      line-height: 52px;
-    }
-    .des {
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 34px;
-    }
-  }
-  .info {
+  border-radius: 10px;
+  padding: 10px;
+  background: #FFF;
+  box-shadow: 0px 0px 60px 30px rgba(0, 0, 0, 0.03);
+  .box-contact {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    p {
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
-      img{
-        margin-left: 20px;
+    justify-content: space-between;
+    height: 647px;
+    background-color: rgba($color: #ebcd1ee8, $alpha: 0.9);
+    padding: 30px;
+    border-radius: 6px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    .header {
+      .title {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 52px;
+      }
+      .des {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 34px;
       }
     }
-  }
-  .social{
-    display: flex;
-    gap: 20px;
-    color: #fff;
-    .icon-soc{
-      padding: 10px;
-      background-color: #1b1b1b;
-      border-radius: 50%;
-      transition: 0.3s;
-        &:hover{
-          background-color: #fff;
-          color: $main-color;
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        img{
+          margin-left: 20px;
         }
+      }
     }
-  }
-  .object{
-    position: absolute;
-    &.obj1{
-      left: 0;
-      bottom: 0;
+    .social{
+      display: flex;
+      gap: 20px;
+      color: #fff;
+      .icon-soc{
+        padding: 10px;
+        background-color: #1b1b1b;
+        border-radius: 50%;
+        transition: 0.3s;
+          &:hover{
+            background-color: #fff;
+            color: $main-color;
+          }
+      }
     }
-    &.obj2{
-      left: 0;
-      bottom: 50px;
+    .object{
+      position: absolute;
+      &.obj1{
+        left: 0;
+        bottom: 0;
+      }
+      &.obj2{
+        left: 0;
+        bottom: 50px;
+      }
     }
   }
 }

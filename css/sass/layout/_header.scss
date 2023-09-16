@@ -1,9 +1,15 @@
 .box-nav {
-    z-index: 1000;
-    position: absolute;
-    top: 35px;
-    left: 0;
-    width: 100%;
+    padding: 10px 0;
+    background-color: #44444469;
+    &.nav-landing {
+        padding: 0;
+        z-index: 1000;
+        position: absolute;
+        background-color: transparent;
+        top: 35px;
+        left: 0;
+        width: 100%;
+    }
     .bottom-nav {
         padding: 0 !important;
         background-color: transparent;
