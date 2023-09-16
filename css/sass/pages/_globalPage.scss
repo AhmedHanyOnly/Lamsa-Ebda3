@@ -1,0 +1,51 @@
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+// All Rest
+* {
+  @include all-reset;
+}
+// a Reset
+a {
+  @include a-reset;
+}
+// reset btn
+button {
+  border: none;
+  outline: none;
+}
+// Reset Input
+input {
+  direction: unset !important;
+}
+/*remove arrow input number Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/*remove arrow input number Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.whatsapp-btn {
+  position: fixed;
+  z-index: 1000;
+  bottom: 1rem;
+  left: 1rem;
+  width: 50px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.img-holder {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

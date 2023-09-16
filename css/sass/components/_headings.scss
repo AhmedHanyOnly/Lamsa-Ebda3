@@ -1,0 +1,42 @@
+.section-title {
+ color: #000;
+font-size: 32px;
+width: fit-content;
+display: block;
+margin: 0 auto 1rem;
+max-width: calc(100% - ((53px + 14px) * 2));
+text-align: center;
+word-break: break-word;
+position: relative;
+font-weight: 500;
+line-height: 38px;
+&::before {
+ content: "";
+ width: 53px;
+ height: 2px;
+ position: absolute;
+ inset-block-start: 50%;
+ background-color: $main-color;
+ transform: translateY(-50%);
+ inset-inline-end: calc(100% + 14px);
+} 
+&::after {
+ content: "";
+ width: 53px;
+ height: 2px;
+ position: absolute;
+ inset-block-start: 50%;
+ background-color: $main-color;
+ transform: translateY(-50%);
+ inset-inline-start: calc(100% + 14px);
+} 
+}
+
+.main-desc {
+ color: $p-color;
+text-align: center;
+font-size: 16px;
+margin-bottom: 1rem;
+font-weight: 400;
+line-height: normal;
+}
