@@ -175,6 +175,22 @@ input[type=number] {
   line-height: normal;
 }
 
+.btn-holder {
+  margin-top: 50px;
+  padding: 15px 48px;
+  border-radius: 5px;
+  gap: 10px;
+  background-color: #EBCD1E;
+}
+.btn-holder a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
 .main-btn {
   display: flex;
   padding: 9px 24px;
@@ -345,4 +361,99 @@ input[type=number] {
   font-weight: 600;
   line-height: 33.73px;
   border-radius: 0 0 6px 6px;
+}
+
+.box-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 647px;
+  background-color: rgba(235, 205, 30, 0.9);
+  padding: 30px;
+  border-radius: 6px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.box-contact .header .title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 52px;
+}
+.box-contact .header .des {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+}
+.box-contact .info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.box-contact .info p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.box-contact .info p img {
+  margin-left: 20px;
+}
+.box-contact .social {
+  display: flex;
+  gap: 20px;
+  color: #fff;
+}
+.box-contact .social .icon-soc {
+  padding: 10px;
+  background-color: #1b1b1b;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.box-contact .social .icon-soc:hover {
+  background-color: #fff;
+  color: #EBCD1E;
+}
+.box-contact .object {
+  position: absolute;
+}
+.box-contact .object.obj1 {
+  left: 0;
+  bottom: 0;
+}
+.box-contact .object.obj2 {
+  left: 0;
+  bottom: 50px;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  color: #8d8d8d;
+}
+.form-contact .main-lab {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.form-contact .main-inp {
+  border: 0;
+  padding: 12px 0;
+  border-bottom: 2px solid #8d8d8d;
+}
+.form-contact .main-inp:focus-visible {
+  border: 0;
+  border-bottom: 2px solid #000;
+  outline: 0;
+}
+
+.check-holder h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.check-holder .form-checked .main-lab {
+  font-size: 14px;
+}
+.check-holder .form-checked .main-inp {
+  background-color: #EBCD1E;
 }/*# sourceMappingURL=main.css.map */
