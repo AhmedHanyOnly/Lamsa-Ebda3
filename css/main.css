@@ -209,13 +209,164 @@ input[type=number] {
   height: 90%;
   background-color: rgba(235, 205, 30, 0.7);
   margin: 20px;
+  padding: 0 100px;
 }
 .section-pic .img-holder .holder .text {
   font-size: 24px;
   font-weight: 600;
   line-height: 45px;
   color: #fff;
-  margin: 100px 100px 20px;
+  margin: 100px 0 20px;
+}
+.section-pic .img-holder .holder .main-line {
+  background-color: #fff;
+  width: 100%;
+  height: 2px;
+  position: relative;
+}
+.section-pic .img-holder .holder .main-line .long-line::before {
+  content: "";
+  width: 2px;
+  height: 200px;
+  background-color: #fff;
+  position: absolute;
+}
+.section-pic .img-holder .holder .main-line .long-line::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+}
+.section-pic .img-holder .holder .main-line .long-line .text {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 45px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.section-pic .img-holder .holder .main-line .long-line.line1::before {
+  right: 0;
+  top: 0;
+}
+.section-pic .img-holder .holder .main-line .long-line.line1::after {
+  right: -5px;
+  bottom: -200px;
+}
+.section-pic .img-holder .holder .main-line .long-line.line1 .text {
+  right: -27px;
+  bottom: -260px;
+}
+.section-pic .img-holder .holder .main-line .long-line.line2::before {
+  right: 300px;
+  top: 0;
+}
+.section-pic .img-holder .holder .main-line .long-line.line2::after {
+  right: 295px;
+  bottom: -200px;
+}
+.section-pic .img-holder .holder .main-line .long-line.line2 .text {
+  right: 272px;
+  bottom: -260px;
+}
+.section-pic .img-holder .holder .main-line .long-line.line3::before {
+  right: 600px;
+  top: 0;
+}
+.section-pic .img-holder .holder .main-line .long-line.line3::after {
+  right: 595px;
+  bottom: -200px;
+}
+.section-pic .img-holder .holder .main-line .long-line.line3 .text {
+  right: 572px;
+  bottom: -260px;
+}
+.section-pic .img-holder .holder .main-line .long-line.line4::before {
+  right: 900px;
+  top: 0;
+}
+.section-pic .img-holder .holder .main-line .long-line.line4::after {
+  right: 895px;
+  bottom: -200px;
+}
+.section-pic .img-holder .holder .main-line .long-line.line4 .text {
+  right: 872px;
+  bottom: -260px;
+}
+.section-pic .img-holder .holder .main-line .short-line::before {
+  content: "";
+  width: 2px;
+  height: 100px;
+  background-color: #fff;
+  position: absolute;
+}
+.section-pic .img-holder .holder .main-line .short-line::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+}
+.section-pic .img-holder .holder .main-line .short-line .text {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 45px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.section-pic .img-holder .holder .main-line .short-line.line1::before {
+  right: 150px;
+  top: 0;
+}
+.section-pic .img-holder .holder .main-line .short-line.line1::after {
+  right: 145px;
+  bottom: -100px;
+}
+.section-pic .img-holder .holder .main-line .short-line.line1 .text {
+  right: 122px;
+  bottom: -160px;
+}
+.section-pic .img-holder .holder .main-line .short-line.line2::before {
+  right: 450px;
+  top: 0;
+}
+.section-pic .img-holder .holder .main-line .short-line.line2::after {
+  right: 445px;
+  bottom: -100px;
+}
+.section-pic .img-holder .holder .main-line .short-line.line2 .text {
+  right: 422px;
+  bottom: -160px;
+}
+.section-pic .img-holder .holder .main-line .short-line.line3::before {
+  right: 750px;
+  top: 0;
+}
+.section-pic .img-holder .holder .main-line .short-line.line3::after {
+  right: 745px;
+  bottom: -100px;
+}
+.section-pic .img-holder .holder .main-line .short-line.line3 .text {
+  right: 722px;
+  bottom: -160px;
+}
+.section-pic .img-holder .holder .main-line .short-line.line4::before {
+  left: 0;
+  top: 0;
+}
+.section-pic .img-holder .holder .main-line .short-line.line4::after {
+  left: -5px;
+  bottom: -100px;
+}
+.section-pic .img-holder .holder .main-line .short-line.line4 .text {
+  left: -27px;
+  bottom: -160px;
 }
 .section-pic .img-holder .title {
   position: absolute;
